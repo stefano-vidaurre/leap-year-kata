@@ -27,7 +27,14 @@ public class LeapYearTest
         bool result = Program.IsLeapYear(2);
         Assert.That(result, Is.False);
     }
-
+    
+    [Test]
+    public void ShouldReturnFalseForYear3()
+    {
+        bool result = Program.IsLeapYear(3);
+        Assert.That(result, Is.False);
+    }
+    
     [Test]
     public void ShouldReturnTrueForYear400()
     {
