@@ -17,7 +17,7 @@ public static class Program
             return true;
         }
         
-        if (year == 400 || year == 800)
+        if (year == 400 || year == 800 || year == 1200)
         {
             return true;
         }
