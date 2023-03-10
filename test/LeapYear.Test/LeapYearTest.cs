@@ -10,6 +10,8 @@ public class LeapYearTest
     [TestCase(1)]
     [TestCase(2)]
     [TestCase(3)]
+    [TestCase(5)]
+    [TestCase(6)]
     public void ShouldReturnFalseForNonLeapYear(int year)
     {
         bool result = Program.IsLeapYear(year);
