@@ -38,24 +38,12 @@ public class LeapYearTest
         Assert.That(result, Is.False);
     }
 
-    [Test]
-    public void ShouldReturnTrueForYear400()
+    [TestCase(400)]
+    [TestCase(800)]
+    [TestCase(1200)]
+    public void ShouldReturnTrueForMultiplesOfFourHundred(int year)
     {
-        bool result = Program.IsLeapYear(400);
-        Assert.That(result, Is.True);
-    }
-    
-    [Test]
-    public void ShouldReturnTrueForYear800()
-    {
-        bool result = Program.IsLeapYear(800);
-        Assert.That(result, Is.True);
-    }
-    
-    [Test]
-    public void ShouldReturnTrueForYear1200()
-    {
-        bool result = Program.IsLeapYear(1200);
+        bool result = Program.IsLeapYear(year);
         Assert.That(result, Is.True);
     }
 }
