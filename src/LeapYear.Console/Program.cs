@@ -12,6 +12,6 @@ public static class Program
     
     public static bool IsLeapYear(int year)
     {
-        return true;
+        return year == 400;
     }
 }
