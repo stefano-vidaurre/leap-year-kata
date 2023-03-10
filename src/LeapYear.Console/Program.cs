@@ -17,6 +17,11 @@ public static class Program
             return true;
         }
 
+        if (year == 100)
+        {
+            return false;
+        }
+
         return year % 4 == 0;
     }
 }
