@@ -30,6 +30,8 @@ public class LeapYearTest
     [TestCase(100)]
     [TestCase(200)]
     [TestCase(300)]
+    [TestCase(500)]
+    [TestCase(600)]
     public void ShouldReturnFalseForMultiplesOfOneHundred(int year)
     {
         bool result = Program.IsLeapYear(year);
