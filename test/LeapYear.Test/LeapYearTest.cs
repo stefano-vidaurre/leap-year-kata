@@ -46,4 +46,11 @@ public class LeapYearTest
         bool result = Program.IsLeapYear(year);
         Assert.That(result, Is.True);
     }
+
+    [Test]
+    public void ShouldReturnTrueForThePandemicYear()
+    {
+        bool result = Program.IsLeapYear(2020);
+        Assert.That(result, Is.True);
+    }
 }
