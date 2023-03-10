@@ -8,8 +8,9 @@ public class LeapYearTest
     }
 
     [Test]
-    public void Test1()
+    public void ShouldReturnTrueWithTheYear400()
     {
-        Assert.Pass();
+        bool result = Program.IsLeapYear(400);
+        Assert.IsTrue(result);
     }
 }
